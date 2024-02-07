@@ -1,0 +1,15 @@
+.cart-list {
+  padding-left: 0px;
+}
+
+.remove-all-button {
+ background-color: transparent;
+ border-style: none;
+ outline: none;
+ font-weight: bold;
+ color: #0b69ff;
+ cursor: pointer;
+ display: flex;
+ align-self: flex-end;
+
+}

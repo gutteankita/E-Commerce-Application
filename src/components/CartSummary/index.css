@@ -1,0 +1,48 @@
+/* Write your CSS here */
+
+.cart-summary-container {
+  display: flex;
+  flex-direction: column;
+}
+.total-count-cart-item {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+}
+.cart-total {
+  color: #616e7c;
+  font-size: 18px;
+  margin: 0px;
+  padding: 0px;
+}
+.cart-items-total-price{
+  color: #171f46;
+  font-size: 23px;
+  font-weight: bold;
+  margin: 0px;
+  padding: 0px;
+}
+.cart-item-count {
+  color: #616e7c;
+  font-size: 14px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.checkout-btn {
+  background-color: #0b69ff;
+  border-style: none;
+  border-radius: 5px;
+  color: #ffffff;
+  outline: none;
+  height: 30px;
+  margin-top: 10px;
+  padding: 5px;
+}
+
+@media (min-width: 788px) {
+  .checkout-btn {
+    align-self: flex-end;
+    width: 33%;
+  }
+}
