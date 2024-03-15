@@ -1,6 +1,8 @@
 // Write your code here
 import {Component} from 'react'
+import Popup from 'reactjs-popup'
 import CartContext from '../../context/CartContext'
+import Payment from '../Payment'
 
 import './index.css'
 
@@ -31,7 +33,18 @@ class CartSummary extends Component {
                 </h1>
                 <p className="cart-item-count">{cartItemCount} Items in Cart</p>
               </div>
-              <button className="checkout-btn">Checkout</button>
+
+              <Popup
+                modal
+                trigger={
+                  <button className="checkout-btn" type="button">
+                    Checkout
+                  </button>
+                }
+                position="top left"
+              >
+                {close => <Payment close={close} />}
+              </Popup>
             </div>
           )
         }}
