@@ -43,6 +43,7 @@ class CartItem extends Component {
                     className="quantity-controller-button"
                     onClick={onMinusDecrementQuantity}
                     data-testid="minus"
+                    aria-label="Decrease quantity"
                   >
                     <BsDashSquare color="#52606D" size={12} />
                   </button>
@@ -52,6 +53,7 @@ class CartItem extends Component {
                     className="quantity-controller-button"
                     onClick={onPlusIncrementQuantity}
                     data-testid="plus"
+                    aria-label="Increase quantity"
                   >
                     <BsPlusSquare color="#52606D" size={12} />
                   </button>
@@ -64,6 +66,7 @@ class CartItem extends Component {
                     type="button"
                     onClick={onDeleteCartItem}
                     data-testid="remove"
+                    aria-label="Delete item"
                   >
                     Remove
                   </button>
@@ -73,7 +76,8 @@ class CartItem extends Component {
                 className="delete-button"
                 type="button"
                 onClick={onDeleteCartItem}
-                 data-testid="remove"
+                data-testid="remove"
+                aria-label="Remove"
               >
                 <AiFillCloseCircle color="#616E7C" size={20} />
               </button>

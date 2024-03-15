@@ -3,13 +3,12 @@
 }
 
 .remove-all-button {
- background-color: transparent;
- border-style: none;
- outline: none;
- font-weight: bold;
- color: #0b69ff;
- cursor: pointer;
- display: flex;
- align-self: flex-end;
-
+  background-color: transparent;
+  border-style: none;
+  outline: none;
+  font-weight: bold;
+  color: #0b69ff;
+  cursor: pointer;
+  display: flex;
+  align-self: flex-end;
 }
